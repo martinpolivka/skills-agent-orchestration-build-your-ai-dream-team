@@ -73,7 +73,7 @@ For Project Pulse, the expected app files are:
    > Push the commit.
    > ```
 
-7. Mona will check your work and post the next lesson.
+7. After pushing your commit, continue with the next step.
 
 <details>
 <summary>Having trouble? 🤷</summary><br/>

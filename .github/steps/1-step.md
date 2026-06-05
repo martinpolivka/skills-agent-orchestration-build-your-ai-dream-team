@@ -85,7 +85,7 @@ The custom agent definitions are already available in `.github/agents/`. Your fi
    > Push the commit.
    > ```
 
-1. Mona will check your work and post the next lesson.
+1. After pushing your commit, continue with the next step.
 
 <details>
 <summary>Having trouble? 🤷</summary><br/>

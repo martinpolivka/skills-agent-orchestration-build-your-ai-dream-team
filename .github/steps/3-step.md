@@ -118,7 +118,7 @@ The dashboard should help contributors quickly understand Mona's team projects. 
    > Push the commit.
    > ```
 
-8. Mona will check your work and post the next lesson.
+8. After pushing your commit, continue with the next step.
 
 <details>
 <summary>Having trouble? 🤷</summary><br/>

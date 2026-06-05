@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - 'participant/**'
+      - 'participant/*'
     paths:
       - docs/final-handoff.md
 
