@@ -1,0 +1,294 @@
+/*
+ * Project Pulse - Style Guide & Design Tokens
+ * 
+ * Colors:
+ * - Primary: #4f46e5 (Indigo)
+ * - Background: #f3f4f6 (Gray 100)
+ * - Surface: #ffffff (White)
+ * - Text Primary: #111827 (Gray 900)
+ * - Text Secondary: #6b7280 (Gray 500)
+ * 
+ * Status Colors:
+ * - Healthy: #10b981 (Emerald)
+ * - At-Risk: #f59e0b (Amber)
+ * - Critical: #ef4444 (Red)
+ */
+
+:root {
+  /* Color System */
+  --color-primary: #4f46e5;
+  --color-primary-hover: #4338ca;
+  
+  --color-bg-base: #f3f4f6;
+  --color-bg-surface: #ffffff;
+  
+  --color-text-primary: #111827;
+  --color-text-secondary: #6b7280;
+  
+  /* Status Colors */
+  --color-status-healthy: #10b981;
+  --color-status-healthy-bg: #d1fae5;
+  --color-status-healthy-text: #065f46;
+  
+  --color-status-at-risk: #f59e0b;
+  --color-status-at-risk-bg: #fef3c7;
+  --color-status-at-risk-text: #92400e;
+  
+  --color-status-critical: #ef4444;
+  --color-status-critical-bg: #fee2e2;
+  --color-status-critical-text: #991b1b;
+  
+  /* Typography */
+  --font-family-base: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  
+  /* Borders */
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+}
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family-base);
+  background-color: var(--color-bg-base);
+  color: var(--color-text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  color: var(--color-text-primary);
+  font-weight: 600;
+  margin-bottom: var(--space-4);
+}
+
+/* Dashboard Container */
+.dashboard {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-4);
+}
+
+/* Header */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-8);
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.dashboard-header h1 {
+  margin-bottom: 0;
+  font-size: 2rem;
+}
+
+/* KPI Strip */
+.kpi-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-6);
+  margin-bottom: var(--space-8);
+}
+
+.kpi-card {
+  background-color: var(--color-bg-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.kpi-card__label {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-2);
+}
+
+.kpi-card__value {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--space-6);
+  margin-bottom: var(--space-8);
+}
+
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1440px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Project Card */
+.project-card {
+  background-color: var(--color-bg-surface);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-md);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover, .project-card:focus-within {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.project-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-4);
+}
+
+.project-card__title {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-1);
+}
+
+.project-card__description {
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+  margin-bottom: var(--space-6);
+  flex-grow: 1;
+}
+
+/* Status Badges */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-1) var(--space-3);
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.status-badge--healthy {
+  background-color: var(--color-status-healthy-bg);
+  color: var(--color-status-healthy-text);
+}
+
+.status-badge--at-risk {
+  background-color: var(--color-status-at-risk-bg);
+  color: var(--color-status-at-risk-text);
+}
+
+.status-badge--critical {
+  background-color: var(--color-status-critical-bg);
+  color: var(--color-status-critical-text);
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  height: 0.5rem;
+  background-color: var(--color-bg-base);
+  border-radius: 9999px;
+  overflow: hidden;
+  margin-bottom: var(--space-2);
+}
+
+.progress-bar__fill {
+  height: 100%;
+  background-color: var(--color-primary);
+  border-radius: 9999px;
+  transition: width 0.3s ease;
+}
+
+.progress-bar__label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+/* Team Section */
+.team-section {
+  background-color: var(--color-bg-surface);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: var(--space-8);
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  list-style: none;
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2) var(--space-4);
+  background-color: var(--color-bg-base);
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Error Message */
+.error-message {
+  background-color: var(--color-status-critical-bg);
+  color: var(--color-status-critical-text);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--color-status-critical);
+  margin-bottom: var(--space-6);
+}
+
+/* Interactive elements */
+a:focus, button:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
