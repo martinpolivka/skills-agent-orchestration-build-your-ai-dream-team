@@ -17,7 +17,7 @@ For Project Pulse, the expected app files are:
 
 ### :keyboard: Activity: Create the implementation plan
 
-1. Return to your Codespace terminal.
+1. Return to your local VS Code terminal.
 
 2. Start Copilot CLI if it is not already running:
 
@@ -83,3 +83,10 @@ For Project Pulse, the expected app files are:
 - Make sure you pushed your commit.
 
 </details>
+
+---
+
+### Navigation
+
+- Next: [Step 3](3-step.md)
+- Previous: [Step 1](1-step.md)

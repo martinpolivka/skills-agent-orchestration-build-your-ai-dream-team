@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - main
+      - 'participant/**'
 
 permissions:
   contents: write
@@ -22,7 +22,7 @@ jobs:
     uses: skills/exercise-toolkit/.github/workflows/start-exercise.yml@v0.9.3
     with:
       exercise-title: "Agent Orchestration Build Your AI Dream Team"
-      intro-message: "Practice coordinating specialist agents from a Codespace terminal with GitHub Copilot CLI"
+      intro-message: "Practice coordinating specialist agents from a local VS Code terminal with GitHub Copilot CLI"
 
   post_next_step_content:
     name: Post next step content
@@ -36,7 +36,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
         with:
-          ref: main
+          ref: ${{ github.ref_name }}
 
       - name: Get response templates
         uses: actions/checkout@v6

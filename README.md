@@ -4,22 +4,31 @@ _Use custom agents in GitHub Copilot CLI to plan, design, build, and validate a 
 
 ## Welcome
 
-GitHub Copilot CLI brings an agentic coding assistant directly into your terminal. In this exercise, you will use prebuilt custom agents in a Codespace to orchestrate planning, design, coding, and validation for Mona's Project Pulse dashboard.
+GitHub Copilot CLI brings an agentic coding assistant directly into your terminal. In this exercise, you will use prebuilt custom agents in a local VS Code workspace to orchestrate planning, design, coding, and validation for Mona's Project Pulse dashboard.
 
 - **Who is this for**: Developers who have basic GitHub and GitHub Copilot familiarity and want to learn how to coordinate specialist agents from the terminal.
-- **What you'll learn**: How to use GitHub Copilot CLI in Codespaces to inspect custom agents, ask an Orchestrator to involve specialist agents, plan implementation phases, build a small dashboard, and validate the final result.
+- **What you'll learn**: How to use GitHub Copilot CLI locally to inspect custom agents, ask an Orchestrator to involve specialist agents, plan implementation phases, build a small dashboard, and validate the final result.
 - **What you'll build**: A runnable Project Pulse dashboard with `app/index.html`, `app/styles.css`, `app/project-data.json`, and `.vscode/launch.json`, plus planning and handoff notes in `docs/`.
-- **Prerequisites**:
-  - A GitHub account with access to GitHub Copilot.
-  - Access to GitHub Codespaces.
-  - Basic familiarity with repositories, commits, and Markdown.
-  - Comfort working in an integrated terminal.
-
 - **How long**: This exercise takes less than one hour to complete.
+
+### Local prerequisites
+
+Before you start, make sure your computer has:
+
+- [Git](https://git-scm.com/) and access to push branches to this repository.
+- [Visual Studio Code](https://code.visualstudio.com/) with an integrated terminal.
+- GitHub Copilot access for your GitHub account.
+- [GitHub CLI](https://cli.github.com/) installed and authenticated with `gh auth login`.
+- GitHub Copilot CLI installed, or permission to install it during Step 1:
+  - Windows: `winget install GitHub.Copilot`
+  - macOS and Linux with Homebrew: `brew install copilot-cli`
+  - macOS and Linux with the official install script: `curl -fsSL https://gh.io/copilot-install | bash`
+- Python 3.13 or later for previewing the static dashboard with `python3 -m http.server`.
+- Network access to GitHub and the Copilot service.
 
 In this exercise, you will:
 
-1. Start a Codespace that puts GitHub Copilot CLI front and center.
+1. Start GitHub Copilot CLI in a local VS Code terminal.
 1. Inspect the Orchestrator, Planner, Coder, and Designer files under `.github/agents/`.
 1. Use the Orchestrator and Planner to create a Project Pulse implementation plan.
 1. Use the Orchestrator to delegate dashboard design and coding work.
@@ -28,26 +37,16 @@ In this exercise, you will:
 
 ### How to start this exercise
 
-Simply copy the exercise to your account, then give your favorite Octocat (Mona) **about 20 seconds** to prepare the first lesson, then **refresh the page**.
+Open the prepared repository in VS Code, then create your own branch before making any changes. Use a branch name that identifies you, for example `participant/<your-name>`.
 
-[![](https://img.shields.io/badge/Copy%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/new?template_owner=skills&template_name=agent-orchestration-build-your-ai-dream-team&owner=%40me&name=skills-agent-orchestration-build-your-ai-dream-team&description=Exercise:+Agent+Orchestration:+Build+Your+AI+Dream+Team&visibility=public)
+Continue with [Step 1](.github/steps/1-step.md).
 
-<details>
-<summary>Having trouble? 🤷</summary><br/>
+Further steps:
 
-When copying the exercise, we recommend the following settings:
-
-- For owner, choose your personal account or an organization to host the repository.
-
-- We recommend creating a public repository, since private repositories will use Actions minutes.
-
-If the exercise isn't ready in 20 seconds, please check the [Actions](../../actions) tab.
-
-- Check to see if a job is running. Sometimes it simply takes a bit longer.
-
-- If the page shows a failed job, please submit an issue. Nice, you found a bug! 🐛
-
-</details>
+- [Step 2](.github/steps/2-step.md)
+- [Step 3](.github/steps/3-step.md)
+- [Step 4](.github/steps/4-step.md)
+- [Review](.github/steps/x-review.md)
 
 ---
 

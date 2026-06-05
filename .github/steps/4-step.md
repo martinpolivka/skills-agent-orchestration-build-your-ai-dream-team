@@ -15,7 +15,7 @@ The Orchestrator is responsible for more than dispatching work. It should explai
 
 ### :keyboard: Activity: Validate and summarize
 
-1. Return to your Codespace terminal.
+1. Return to your local VS Code terminal.
 
 2. Start Copilot CLI if needed:
 
@@ -88,3 +88,10 @@ The Orchestrator is responsible for more than dispatching work. It should explai
 - Make sure you pushed your commit.
 
 </details>
+
+---
+
+### Navigation
+
+- Next: [Review](x-review.md)
+- Previous: [Step 3](3-step.md)

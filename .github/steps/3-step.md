@@ -18,7 +18,7 @@ The dashboard should help contributors quickly understand Mona's team projects. 
 
 ### :keyboard: Activity: Delegate design and coding work
 
-1. Return to your Codespace terminal.
+1. Return to your local VS Code terminal.
 
 2. Start Copilot CLI if needed:
 
@@ -133,3 +133,10 @@ The dashboard should help contributors quickly understand Mona's team projects. 
 - Make sure you pushed your commit.
 
 </details>
+
+---
+
+### Navigation
+
+- Next: [Step 4](4-step.md)
+- Previous: [Step 2](2-step.md)

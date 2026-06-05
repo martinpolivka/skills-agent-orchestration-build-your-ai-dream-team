@@ -7,7 +7,7 @@
 - **Audience**: Developers who have basic GitHub and GitHub Copilot familiarity and want to learn how to coordinate specialist agents from the terminal.
 - **Experience level**: Intermediate
 - **Estimated duration**: Less than one hour
-- **Primary environment**: GitHub Codespaces
+- **Primary environment**: Local VS Code workspace
 - **Primary interface**: GitHub Copilot CLI in the integrated terminal
 
 ## Summary
@@ -25,16 +25,15 @@ By the end of this exercise, learners will be able to:
    - Planner: Opus 4.7
    - Coder: GPT-5.5
    - Designer: Gemini 3.1 Pro
-1. Use GitHub Copilot CLI in a Codespace terminal as the primary interface.
+1. Use GitHub Copilot CLI in a local VS Code terminal as the primary interface.
 1. Ask the Orchestrator to involve the Planner before implementation.
 1. Separate design work from coding work.
 1. Build a small static dashboard with HTML, CSS, and JSON.
 1. Validate the dashboard and write a final Orchestrator handoff.
 
-## Prerequisites
+## Local prerequisites
 
 - A GitHub account.
-- Access to GitHub Codespaces.
 - Access to GitHub Copilot and GitHub Copilot CLI.
 - Basic familiarity with repositories, commits, and Markdown.
 - Comfort working in an integrated terminal.
@@ -51,7 +50,7 @@ Learners will use prebuilt agent definitions and create these outputs:
 - `.vscode/launch.json`: learner-created VS Code launch configuration for previewing the dashboard.
 - `docs/final-handoff.md`: final Orchestrator validation and handoff.
 
-## Codespaces and dev container setup
+## Local workspace setup
 
 The repository includes:
 
@@ -60,14 +59,12 @@ The repository includes:
 - `.devcontainer/postStart.sh`
 - `.vscode/tasks.json`
 
-The dev container should:
+The local workspace should:
 
 - Install or verify GitHub Copilot CLI availability.
 - Verify GitHub CLI availability.
-- Open the terminal in the editor area after setup.
-- Start GitHub Copilot CLI with `copilot --allow-all --enable-all-github-mcp-tools`.
-- Configure terminal copy/paste ergonomics.
-- Avoid requiring learners to install local desktop tools outside Codespaces.
+- Start GitHub Copilot CLI from the integrated terminal with `copilot --allow-all --enable-all-github-mcp-tools`.
+- Use a participant branch for all learner work.
 
 ## Story
 
@@ -81,8 +78,8 @@ GitHub Copilot CLI can use custom agents stored in `.github/agents/`. In this ex
 
 ### Activity
 
-1. Open the exercise in Codespaces.
-1. Use the terminal that opens in the editor area.
+1. Open the prepared repository in a local VS Code workspace.
+1. Create a participant branch.
 1. Start GitHub Copilot CLI with `copilot --allow-all --enable-all-github-mcp-tools` if it is not already running.
 1. Ask Copilot CLI to inspect `.github/agents/`.
 1. Update `docs/agent-team.md` with each agent, model, responsibility, source file, and how the team will build Project Pulse.
@@ -184,7 +181,7 @@ The Orchestrator closes the loop by validating the final app and summarizing wha
 
 The review step should recap that learners:
 
-- Used GitHub Copilot CLI in Codespaces.
+- Used GitHub Copilot CLI in a local VS Code terminal.
 - Inspected prebuilt custom agents.
 - Used an Orchestrator to involve Planner, Designer, and Coder.
 - Created an implementation plan.
@@ -196,7 +193,6 @@ The review step should recap that learners:
 - GitHub Copilot CLI documentation: https://docs.github.com/copilot/concepts/agents/about-copilot-cli
 - GitHub Copilot CLI help topics: `/agent`, `/model`, `/tasks`, `/fleet`, `/terminal-setup`, `/init`, `/skills`, and `/mcp`.
 - Source multi-agent gist: https://gist.github.com/burkeholland/0e68481f96e94bbb98134fa6efd00436#file-three-agent-md
-- GitHub Codespaces dev containers: https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/introduction-to-dev-containers
 - Dev Container JSON reference: https://containers.dev/implementors/json_reference/
 - GitHub Actions events that trigger workflows: https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows
 

@@ -8,7 +8,7 @@ You used custom agents in GitHub Copilot CLI to plan, design, build, validate, a
 
 You learned how to:
 
-- Use GitHub Copilot CLI in a Codespace terminal.
+- Use GitHub Copilot CLI in a local VS Code terminal.
 - Inspect custom agents in `.github/agents/`.
 - Ask an Orchestrator to involve a Planner before building.
 - Separate design work from coding work.
@@ -24,5 +24,11 @@ You learned how to:
 - Use `/agent`, `/model`, `/tasks`, and `/fleet` in GitHub Copilot CLI to explore agent and subagent workflows.
 - Add repository instructions that explain when to use Planner, Coder, Designer, and Orchestrator roles.
 - Expand Project Pulse with filtering, sorting, or richer project detail views.
-- Explore [GitHub Codespaces dev containers](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/introduction-to-dev-containers) for repeatable CLI-first environments.
 - Learn more about [GitHub Copilot CLI](https://docs.github.com/copilot/concepts/agents/about-copilot-cli).
+
+---
+
+### Navigation
+
+- Previous: [Step 4](4-step.md)
+- [Back to README](../../README.md)

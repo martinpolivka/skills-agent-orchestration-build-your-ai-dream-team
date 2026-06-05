@@ -8,4 +8,4 @@ Include:
 - the target model for each agent
 - the responsibility of each agent
 - where the agent definition lives under the repository agent folder
-- a note that you are using GitHub Copilot CLI in a Codespace to orchestrate the work
+- a note that you are using GitHub Copilot CLI in a local VS Code terminal to orchestrate the work
