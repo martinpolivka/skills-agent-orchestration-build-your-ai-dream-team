@@ -17,19 +17,21 @@ The custom agent definitions are already available in `.github/agents/`. Your fi
 
 ### :keyboard: Activity: Open the repository and start Copilot CLI
 
-1. Clone the prepared workshop repository if you have not already cloned it:
+1. Fork this repository to your own GitHub account if you have not already forked it.
 
-   [![Clone in VS Code](https://img.shields.io/badge/Clone%20in-VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)](vscode://vscode.git/clone?url=https://github.com/martinpolivka/skills-agent-orchestration-build-your-ai-dream-team.git)
+   Do not create branches or commit directly in the original `martinpolivka` repository. All workshop changes should be made in a branch in your fork, then submitted back with a pull request.
+
+1. Clone your fork to your machine if you have not already cloned it:
 
    ```bash
-   # Clone the prepared workshop repository and enter its folder.
-   git clone https://github.com/martinpolivka/skills-agent-orchestration-build-your-ai-dream-team.git
+   # Clone your fork of the prepared workshop repository and enter its folder.
+   git clone https://github.com/<your-github-username>/skills-agent-orchestration-build-your-ai-dream-team.git
    cd skills-agent-orchestration-build-your-ai-dream-team
    ```
 
 1. Open the cloned repository in VS Code.
 
-1. Before making changes, create your own participant branch:
+1. Before making changes, create your own participant branch in your fork:
 
    ```bash
    # Create a participant branch for your lab work.
@@ -82,7 +84,7 @@ The custom agent definitions are already available in `.github/agents/`. Your fi
    >
    > Commit it with the message "Document the Project Pulse agent team".
    >
-   > Push the commit.
+   > Push the commit to my fork.
    > ```
 
 1. After pushing your commit, continue with the next step.
@@ -94,7 +96,7 @@ The custom agent definitions are already available in `.github/agents/`. Your fi
 - Make sure the file references `.github/agents/`.
 - Make sure the file includes all four agent names.
 - Make sure the file uses the updated models: Opus 4.7, GPT-5.5, and Gemini 3.1 Pro.
-- Make sure you pushed your commit.
+- Make sure you pushed your commit to your fork.
 
 </details>
 

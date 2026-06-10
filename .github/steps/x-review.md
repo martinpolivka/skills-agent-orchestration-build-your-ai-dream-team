@@ -17,6 +17,10 @@ You learned how to:
 - Run the dashboard from that launch configuration.
 - Validate the final result and write an Orchestrator handoff.
 
+## Final workshop handoff
+
+Open a pull request from your `participant/<your-name>` branch in your fork to the `main` branch of the original `martinpolivka` repository. Do not merge the pull request yourself. The workshop instructor will review and approve it.
+
 ## What's next?
 
 - Try this orchestration pattern on a real feature in one of your repositories.

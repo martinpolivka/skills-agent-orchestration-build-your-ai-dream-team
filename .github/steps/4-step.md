@@ -74,7 +74,7 @@ The Orchestrator is responsible for more than dispatching work. It should explai
    >
    > Commit it with the message "Validate and hand off Project Pulse".
    >
-   > Push the commit.
+   > Push the commit to my fork.
    > ```
 
 7. After pushing your commit, continue to the review.
@@ -85,7 +85,7 @@ The Orchestrator is responsible for more than dispatching work. It should explai
 - Make sure you created `docs/final-handoff.md`.
 - Include all four agent names.
 - Include `Project Pulse`, `validation`, the app file names, and `.vscode/launch.json`.
-- Make sure you pushed your commit.
+- Make sure you pushed your commit to your fork.
 
 </details>
 

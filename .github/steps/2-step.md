@@ -70,7 +70,7 @@ For Project Pulse, the expected app files are:
    >
    > Commit it with the message "Plan the Project Pulse dashboard".
    >
-   > Push the commit.
+   > Push the commit to my fork.
    > ```
 
 7. After pushing your commit, continue with the next step.
@@ -80,7 +80,7 @@ For Project Pulse, the expected app files are:
 
 - Make sure you created `docs/project-pulse-plan.md`.
 - Include `Project Pulse`, `Designer`, `Coder`, the three app files, `.vscode/launch.json`, `parallel`, and `validation`.
-- Make sure you pushed your commit.
+- Make sure you pushed your commit to your fork.
 
 </details>
 

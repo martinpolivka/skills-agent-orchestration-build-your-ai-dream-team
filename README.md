@@ -15,7 +15,7 @@ GitHub Copilot CLI brings an agentic coding assistant directly into your termina
 
 Before you start, make sure your computer has:
 
-- [Git](https://git-scm.com/) and access to push branches to this repository.
+- [Git](https://git-scm.com/) and a GitHub.com account that can fork this public repository.
 - [Visual Studio Code](https://code.visualstudio.com/) with an integrated terminal.
 - GitHub Copilot access for your GitHub account.
 - [GitHub CLI](https://cli.github.com/) installed and authenticated with `gh auth login`.
@@ -37,7 +37,7 @@ In this exercise, you will:
 
 ### How to start this exercise
 
-Open the prepared repository in VS Code, then create your own branch before making any changes. Use a branch name that identifies you, for example `participant/<your-name>`.
+Fork this repository to your own GitHub account, then open your fork in VS Code. Do not create branches or commit directly in the original `martinpolivka` repository. Create your participant branch in your fork before making any changes. Use a branch name that identifies you, for example `participant/<your-name>`.
 
 Continue with [Step 1](.github/steps/1-step.md).
 
