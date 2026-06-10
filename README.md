@@ -37,7 +37,7 @@ In this exercise, you will:
 
 ### How to start this exercise
 
-Fork this repository to your own GitHub account, then open your fork in VS Code. Do not create branches or commit directly in the original `martinpolivka` repository. Create your participant branch in your fork before making any changes. Use a branch name that identifies you, for example `participant/<your-name>`.
+Fork this repository to your own GitHub account, then open your fork in VS Code. Do not create branches, commit, open pull requests, or merge changes in the original `martinpolivka` repository. Create your participant branch in your fork before making any changes. Use a branch name that identifies you, for example `participant/<your-name>`.
 
 Continue with [Step 1](.github/steps/1-step.md).
 
