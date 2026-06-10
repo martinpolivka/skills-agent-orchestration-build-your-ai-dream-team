@@ -115,7 +115,7 @@ The dashboard should help contributors quickly understand Mona's team projects. 
    >
    > Commit them with the message "Build the Project Pulse dashboard".
    >
-   > Push the commit.
+   > Push the commit to my fork.
    > ```
 
 8. After pushing your commit, continue with the next step.
