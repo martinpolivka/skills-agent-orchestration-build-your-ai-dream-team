@@ -17,13 +17,11 @@ The custom agent definitions are already available in `.github/agents/`. Your fi
 
 ### :keyboard: Activity: Open the repository and start Copilot CLI
 
-1. Clone the prepared workshop repository if you have not already cloned it:
-
-   [![Clone in VS Code](https://img.shields.io/badge/Clone%20in-VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)](vscode://vscode.git/clone?url=https://github.com/martinpolivka/skills-agent-orchestration-build-your-ai-dream-team.git)
+1. Fork this repository to your own GitHub account if you have not already forked it, then clone your fork to your machine:
 
    ```bash
-   # Clone the prepared workshop repository and enter its folder.
-   git clone https://github.com/martinpolivka/skills-agent-orchestration-build-your-ai-dream-team.git
+   # Clone your fork of this prepared workshop repository and enter its folder.
+   git clone https://github.com/<your-github-username>/skills-agent-orchestration-build-your-ai-dream-team.git
    cd skills-agent-orchestration-build-your-ai-dream-team
    ```
 
